@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>freeCodeCamp Survey Form</title>
+        <style>
+            .container{
+                max-width: 700px;
+                margin: auto;
+            }
+            .container2{
+                max-width: 700px;
+                margin: auto;
+                background-image: linear-gradient(to right, rgba(21, 23, 54, 0.9), rgba(13, 15, 59, 0.9));
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+            body {
+                background-image: 
+                linear-gradient(to right, rgba(105, 105, 170, 0.5), rgba(95, 95, 143, 0.5)),
+                url(image.jpeg);
+                background-attachment: fixed;
+                background-size: cover;
+                font-family: 'Poppins', sans-serif;
+                text-align: left;
+                font-size: 20px;
+                color: white;
+                line-height: 1.7;
+                margin: 0;
+            }
+            .textInput {
+                color: grey;
+                width: 100%;
+                height: 35px;
+                font-size: 18px;
+            }
+            .center{
+                text-align: center;
+            }
+            .name{
+                font-size: 25px;
+            }
+            .italic{
+                font-style: italic;
+                margin-bottom: 2em;
+                font-size: 18px;
+            }
+            .form-control{
+                margin-top: 1em;
+                margin-left: 3ch;
+                margin-right: 3ch;
+            }
+            .submit{
+               height:40px; 
+               width:91%;
+               margin-top: 25px;
+               margin-left: 35px;
+               font-size: 18px;
+               background-color: rgb(73, 150, 73);
+            }
+            .comment {
+                width: 100%;
+                height: 120px;
+                text-align:left;
+                font-size: 18px;
+                margin: auto;
+                resize: vertical;
+            }
+            .select{
+                height: 35px;
+                font-size: 18px;
+                width: 101%;
+                color: grey;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="center name">freeCodeCamp Survey Form</h1>
+            <div class="center italic">Thank you for taking the time to help us
+                improve the platform</div>
+            <form>
+                <div class="container2">
+                    <div class="form-control"><label>Name<br><input name="Name"
+                                class="textInput" type="text" placeholder="Enter your name"></label><br></div>
+                    <div class="form-control"><label>Email<br><input
+                                name="Email" class="textInput" type="text"
+                                placeholder="Enter your Email"></label><br></div>
+                    <div class="form-control"><label>Age (optional)<br><input
+                                name="Age" class="textInput" type="number" min="10" max="110"
+                                placeholder="Age"></label><br></div>
+                    <div class="form-control"><label>Which option best describes
+                            your current role?<br>
+                            <select name="Role" class="select">
+                                <option selected disabled value="">Select
+                                    current role</option>
+                                <option value="Student">Student</option>
+                                <option value="Full Time Job">Full Time Job</option>
+                                <option value="Full Time Learner">Full Time Learner</option>
+                                <option value="Prefer not to say">Prefer not to say</option>
+                                <option value="Other">Other</option><br>
+                            </select>
+                        </div>
+                    </label>
+                    <div class="form-control">
+                        Would you recommend freeCodeCamp to a friend?<br>
+                        <input type="radio" name="recommendation"
+                            value="Definitely">
+                        <label>Definitely</label><br>
+                        <input type="radio" name="recommendation" value="Maybe">
+                        <label>Maybe</label><br>
+                        <input type="radio" name="recommendation" value="Not
+                            sure">
+                        <label>Not sure</label><br>
+                    </div>
+                    <div class="form-control">
+                        <label>What is your favorite feature of freeCodeCamp?<br>
+                            <select name="feature" class="select">
+                                <option selected disabled value="">Select an option</option>
+                                <option value="Challenges">Challenges</option>
+                                <option value="Project">Project</option>
+                                <option value="Community">Community </option>
+                                <option value="Open Source">Open Source</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-control">What would you like to see
+                        improved? (Check all that apply)<br>
+                        <input type="checkbox" name="improve" value="Front-end
+                            Projects">
+                        <label>Front-end Projects</label><br>
+                        <input type="checkbox" name="improve" value="Back-end
+                            Projects">
+                        <label>Back-end Projects</label><br>
+                        <input type="checkbox" name="improve" value="Data
+                            Visualization">
+                        <label>Data Visualization</label><br>
+                        <input type="checkbox" name="improve"
+                            value="Challenges">
+                        <label>Challenges</label><br>
+                        <input type="checkbox" name="improve" value="Open Source
+                            Community">
+                        <label>Open Source Community</label><br>
+                        <input type="checkbox" name="improve" value="Gitter help
+                            rooms">
+                        <label>Gitter help rooms</label><br>
+                        <input type="checkbox" name="improve" value="Videos">
+                        <label>Videos</label><br>
+                        <input type="checkbox" name="improve" value="City
+                            Meetups">
+                        <label>City Meetups</label><br>
+                        <input type="checkbox" name="improve" value="Wiki">
+                        <label>Wiki</label><br>
+                        <input type="checkbox" name="improve" value="Forum">
+                        <label>Forum</label><br>
+                        <input type="checkbox" name="improve" value="Additional
+                            Courses">
+                        <label>Additional Courses</label><br>
+                    </div>
+                    <div class="form-control">
+                        <label>Any comments or suggestions?<br><textarea class="comment"
+                                placeholder="Enter your comment here..."></textarea></label><br>
+                    </div>
+                    <button class="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
